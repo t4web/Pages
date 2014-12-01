@@ -1,10 +1,10 @@
 <?php
 
-namespace Page;
+namespace Pages;
 
 use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
 use Zend\Mvc\Controller\ControllerManager;
-use Page\Controller\CreateController;
+use Pages\Controller\CreateController;
 
 class Module implements AutoloaderProviderInterface
 {
@@ -36,7 +36,7 @@ class Module implements AutoloaderProviderInterface
     {
         return array(
             'factories' => array(
-                'Page\Controller\CreateController' => function (ControllerManager $cm) {
+                'Pages\Controller\CreateController' => function (ControllerManager $cm) {
                     $sl = $cm->getServiceLocator();
                     return new CreateController(
                         //$sl->get('Authentication\Service')

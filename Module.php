@@ -8,8 +8,6 @@ use Zend\ModuleManager\Feature\ControllerProviderInterface;
 use Zend\ModuleManager\Feature\ConsoleUsageProviderInterface;
 use Zend\ModuleManager\Feature\ServiceProviderInterface;
 use Zend\Console\Adapter\AdapterInterface as ConsoleAdapterInterface;
-use Zend\Mvc\Controller\ControllerManager;
-use T4webPages\Controller\CreateController;
 
 class Module implements AutoloaderProviderInterface, ConfigProviderInterface, ServiceProviderInterface,
                         ControllerProviderInterface, ConsoleUsageProviderInterface

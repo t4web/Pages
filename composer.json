@@ -23,7 +23,7 @@
         "zendframework/zend-servicemanager": "~2.5.0"
     },
     "require-dev" : {
-        "codeception/codeception": "2.*"
+        "codeception/codeception": "*"
     },
     "autoload": {
         "psr-0": {

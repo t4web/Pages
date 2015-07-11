@@ -1,5 +1,7 @@
-Pages
-=====
+# Pages
+
+Master:
+[![Build Status](https://travis-ci.org/t4web/Pages.svg)](https://travis-ci.org/t4web/Pages)
 
 ZF2 Module for easily creating content pages and blocks
 

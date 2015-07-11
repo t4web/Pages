@@ -50,12 +50,7 @@ class Module implements AutoloaderProviderInterface, ConfigProviderInterface, Se
         return array(
             'factories' => array(
                 'T4webPages\Controller\Console\Init' => 'T4webPages\Controller\Factory\Console\InitControllerFactory',
-                'T4webPages\Controller\CreateController' => function (ControllerManager $cm) {
-                    $sl = $cm->getServiceLocator();
-                    return new CreateController(
-                        //$sl->get('Authentication\Service')
-                    );
-                },
+                'T4webPages\Controller\Admin\PageController' => 'T4webPages\Controller\Factory\Admin\PageControllerFactory',
             )
         );
     }

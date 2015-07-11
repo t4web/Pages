@@ -3,13 +3,13 @@ return array(
 
     'router' => array(
         'routes' => array(
-            'page-create' => array(
+            'admin-page-create' => array(
                 'type' => 'Literal',
                 'options' => array(
                     'route' => '/admin/pages/create',
                     'defaults' => array(
-                        'controller' => 'Pages\Controller\CreateController',
-                        'action' => 'run',
+                        'controller' => 'T4webPages\Controller\Admin\PageController',
+                        'action' => 'create',
                     ),
                 ),
             ),

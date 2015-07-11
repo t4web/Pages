@@ -2,6 +2,10 @@
 
 Master:
 [![Build Status](https://travis-ci.org/t4web/Pages.svg)](https://travis-ci.org/t4web/Pages)
+[![codecov.io](http://codecov.io/github/t4web/Pages/coverage.svg?branch=master)](http://codecov.io/github/t4web/Pages?branch=master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/t4web/Pages/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/t4web/Pages/?branch=master)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/1c02b79c-dbe2-42cd-931d-56542d0dc7d6/mini.png)](https://insight.sensiolabs.com/projects/1c02b79c-dbe2-42cd-931d-56542d0dc7d6)
+[![Dependency Status](https://www.versioneye.com/user/projects/55a106f0666337000d000471/badge.svg?style=flat)](https://www.versioneye.com/user/projects/55a106f0666337000d000471)
 
 ZF2 Module for easily creating content pages and blocks
 

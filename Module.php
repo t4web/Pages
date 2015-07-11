@@ -1,10 +1,10 @@
 <?php
 
-namespace Pages;
+namespace T4webPages;
 
 use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
 use Zend\Mvc\Controller\ControllerManager;
-use Pages\Controller\CreateController;
+use T4webPages\Controller\CreateController;
 
 class Module implements AutoloaderProviderInterface
 {
@@ -36,7 +36,7 @@ class Module implements AutoloaderProviderInterface
     {
         return array(
             'factories' => array(
-                'Pages\Controller\CreateController' => function (ControllerManager $cm) {
+                'T4webPages\Controller\CreateController' => function (ControllerManager $cm) {
                     $sl = $cm->getServiceLocator();
                     return new CreateController(
                         //$sl->get('Authentication\Service')

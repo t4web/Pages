@@ -1,6 +1,6 @@
 <?php
 
-namespace Pages\Controller;
+namespace T4webPages\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
 

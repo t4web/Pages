@@ -15,7 +15,9 @@
         }
     ],
     "require": {
-        "php": ">=5.4.42"
+        "php": ">=5.4.42",
+        "zendframework/zend-modulemanager": "~2.5.0",
+        "zendframework/zend-mvc": "~2.5.0"
     },
     "require-dev" : {
         "codeception/codeception": "2.*"

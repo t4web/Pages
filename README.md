@@ -1,11 +1,11 @@
 Pages
 =====
 
-ZF2 Module for easily creating static pages
+ZF2 Module for easily creating content pages and blocks
 
 Introduction
 ------------
-In most ZF2 applications, you'll have at least a few pages that are basically static - the controller contains no logic for the given endpoint, and it simply renders a template.
+
 
 Requirements
 ------------
@@ -13,7 +13,9 @@ Requirements
 
 Features / Goals
 ----------------
+* Create DB table with init console command [IN PROGRESS]
 * Create page with WYSIWYG editor in admin [IN PROGRESS]
+* Get page by ID [IN PROGRESS]
 * Show page by route [IN PROGRESS]
 * List pages in admin (backend) zone [IN PROGRESS]
 * Edit page in admin (backend) zone [IN PROGRESS]

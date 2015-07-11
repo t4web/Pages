@@ -9,8 +9,11 @@ Introduction
 
 Requirements
 ------------
-* [Zend Modulemanager](https://github.com/zendframework/zend-modulemanager) (~2.5.0
+* [Zend Console](https://github.com/zendframework/zend-console) (~2.5.0)
+* [Zend DB](https://github.com/zendframework/zend-db) (~2.5.0)
+* [Zend ModuleManager](https://github.com/zendframework/zend-modulemanager) (~2.5.0)
 * [Zend MVC](https://github.com/zendframework/zend-mvc) (~2.5.0)
+* [Zend ServiceManager](https://github.com/zendframework/zend-servicemanager) (~2.5.0)
 
 Features / Goals
 ----------------

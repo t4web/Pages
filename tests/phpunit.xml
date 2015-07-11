@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <phpunit bootstrap="phpunit.bootstrap.php"
-    colors="true"
-    convertErrorsToExceptions="true"
-    convertNoticesToExceptions="true"
-    convertWarningsToExceptions="true"
-    stopOnFailure="false"
-    syntaxCheck="true"
-    backupGlobals="false"
-    backupStaticAttributes="false"
-    mapTestClassNameToCoveredClassName="true"
-    forceCoversAnnotation="true">
+    colors="true">
     
     <testsuites>
         <testsuite name = "unit tests">
             <directory>unit</directory>
         </testsuite>
     </testsuites>
+
+    <filter>
+        <whitelist addUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">src</directory>
+        </whitelist>
+    </filter>
 </phpunit>

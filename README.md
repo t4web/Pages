@@ -17,7 +17,7 @@ Requirements
 
 Features / Goals
 ----------------
-* Create DB table with init console command [IN PROGRESS]
+* Create DB table with init console command [DONE]
 * Create page with WYSIWYG editor in admin [IN PROGRESS]
 * Get page by ID [IN PROGRESS]
 * Show page by route [IN PROGRESS]

@@ -9,7 +9,8 @@ Introduction
 
 Requirements
 ------------
-* [Zend Framework 2](https://github.com/zendframework/zf2) (latest master)
+* [Zend Modulemanager](https://github.com/zendframework/zend-modulemanager) (~2.5.0
+* [Zend MVC](https://github.com/zendframework/zend-mvc) (~2.5.0)
 
 Features / Goals
 ----------------

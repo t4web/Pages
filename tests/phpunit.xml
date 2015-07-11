@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<phpunit bootstrap="phpunit.bootstrap.php"
+    colors="true"
+    convertErrorsToExceptions="true"
+    convertNoticesToExceptions="true"
+    convertWarningsToExceptions="true"
+    stopOnFailure="false"
+    syntaxCheck="true"
+    backupGlobals="false"
+    backupStaticAttributes="false"
+    mapTestClassNameToCoveredClassName="true"
+    forceCoversAnnotation="true">
+    
+    <testsuites>
+        <testsuite name = "unit tests">
+            <directory>unit</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>

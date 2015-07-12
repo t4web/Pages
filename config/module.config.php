@@ -46,7 +46,10 @@ return array(
                 function($serviceLocator, $targetController) {
                     return $targetController->getRequest()->getPost()->toArray();
                 },
-                'T4webPages\Page\Service\Create'
+                'T4webPages\Page\Service\Create',
+                function($serviceLocator, $targetController) {
+                    return $targetController->redirect();
+                },
             ),
         ),
     ),

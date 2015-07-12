@@ -4,6 +4,7 @@ namespace T4webPages\Controller\Admin;
 
 use T4webActionInjections\Mvc\Controller\AbstractActionController;
 use T4webPages\Page\Service\Create as ServiceCreate;
+use Zend\Mvc\Controller\Plugin\Redirect;
 
 class PageController extends AbstractActionController {
 
@@ -12,7 +13,8 @@ class PageController extends AbstractActionController {
         return $view;
     }
 
-    public function createAction(PageViewModel $view, array $params, ServiceCreate $createService)
+    public function createAction(
+        PageViewModel $view, array $params, ServiceCreate $createService, Redirect $redirect)
     {
         $page = $createService->create($params);
 
@@ -22,7 +24,7 @@ class PageController extends AbstractActionController {
             return $view;
         }
 
-        return $this->redirect()->toRoute('admin-pages-list');
+        return $redirect->toRoute('admin-pages-list');
     }
 
 }

@@ -6,6 +6,7 @@ use T4webBase\InputFilter\InputFilterInterface;
 use T4webBase\Domain\Repository\DbRepository;
 use T4webBase\Domain\Factory\EntityFactoryInterface;
 use T4webBase\Domain\Service\Create as BaseCreate;
+use T4webPages\Page\Page;
 
 class Create extends BaseCreate {
 
@@ -23,7 +24,7 @@ class Create extends BaseCreate {
 
     /**
      * @param array $data
-     * @return null|T4webPages\Page\Page
+     * @return null|Page
      */
     public function create(array $data) {
 
@@ -39,7 +40,7 @@ class Create extends BaseCreate {
 
         $data['dtCreated'] = date('Y-m-d H:i:s');
 
-        /** @var T4webPages\Page\Page $page */
+        /** @var Page $page */
         $page = $this->entityFactory->create($data);
         $this->repository->add($page);
 

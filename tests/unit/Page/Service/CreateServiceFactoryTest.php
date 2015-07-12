@@ -5,7 +5,7 @@ use T4webBaseTest\Factory\AbstractServiceFactoryTest;
 use T4webPages\Page\Service\CreateServiceFactory;
 use T4webPages\Page\InputFilter\Create as CreateInputFilter;
 
-class InitControllerFactoryTest extends AbstractServiceFactoryTest
+class CreateServiceFactoryTest extends AbstractServiceFactoryTest
 {
     public function testFactory() {
         $factory = new CreateServiceFactory();

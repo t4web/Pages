@@ -9,8 +9,12 @@ use Zend\ModuleManager\Feature\ConsoleUsageProviderInterface;
 use Zend\ModuleManager\Feature\ServiceProviderInterface;
 use Zend\Console\Adapter\AdapterInterface as ConsoleAdapterInterface;
 
-class Module implements AutoloaderProviderInterface, ConfigProviderInterface, ServiceProviderInterface,
-                        ControllerProviderInterface, ConsoleUsageProviderInterface
+class Module implements
+    AutoloaderProviderInterface,
+    ConfigProviderInterface,
+    ServiceProviderInterface,
+    ControllerProviderInterface,
+    ConsoleUsageProviderInterface
 {
     public function getAutoloaderConfig()
     {

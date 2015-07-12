@@ -23,7 +23,7 @@ class Create extends BaseCreate {
 
     /**
      * @param array $data
-     * @return EntityInterface|null
+     * @return null|T4webPages\Page\Page
      */
     public function create(array $data) {
 

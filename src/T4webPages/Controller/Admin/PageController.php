@@ -2,32 +2,31 @@
 
 namespace T4webPages\Controller\Admin;
 
-use Zend\Mvc\Controller\AbstractActionController;
+use T4webActionInjections\Mvc\Controller\AbstractActionController;
+use T4webPages\Page\Service\Create as ServiceCreate;
 
 class PageController extends AbstractActionController {
 
-    public function createAction()
+    public function newAction(PageViewModel $view)
     {
-        if (!$this->getRequest()->isPost()) {
-            $this->flashMessenger()->addMessage('Bad request', 'general');
-            return $this->view;
+        return $view;
+    }
+
+    public function createAction(PageViewModel $view, array $params, ServiceCreate $createService)
+    {
+        $page = $createService->create($params);
+die(var_dump($page, $createService->getErrors()));
+        if (!$page) {
+            $view->setFormData($params);
+            $view->setErrors($createService->getErrors());
+            return $view;
         }
 
-        $params = $this->getRequest()->getPost()->toArray();
+        $params['employeeId'] = $page->getId();
+        $view->setFormData($params);
 
-        $employee = $this->createService->create($params);
+        return $this->redirect()->toRoute('admin-pages-list');
 
-        if (!$employee) {
-            $this->view->setFormData($params);
-            $this->view->setErrors($this->createService->getErrors());
-            $this->flashMessenger()->addMessage('You are now logged in.');
-            return $this->view;
-        }
-
-        $params['employeeId'] = $employee->getId();
-        $this->view->setFormData($params);
-
-        return $this->redirect()->toRoute('admin-permissions-roles-list');
     }
 
 }

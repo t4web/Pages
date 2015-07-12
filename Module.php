@@ -39,6 +39,12 @@ class Module implements AutoloaderProviderInterface, ConfigProviderInterface, Se
     {
         return array(
             'factories' => array(
+                'T4webPages\Page\Service\Create' => 'T4webPages\Page\Service\CreateServiceFactory',
+            ),
+            'invokables' => array(
+                'T4webPages\Controller\Admin\PageViewModel' => 'T4webPages\Controller\Admin\PageViewModel',
+
+                'T4webPages\Page\InputFilter\Create' => 'T4webPages\Page\InputFilter\Create',
             ),
         );
     }
@@ -48,8 +54,10 @@ class Module implements AutoloaderProviderInterface, ConfigProviderInterface, Se
         return array(
             'factories' => array(
                 'T4webPages\Controller\Console\Init' => 'T4webPages\Controller\Factory\Console\InitControllerFactory',
-                'T4webPages\Controller\Admin\PageController' => 'T4webPages\Controller\Factory\Admin\PageControllerFactory',
-            )
+            ),
+            'invokables' => array(
+                'T4webPages\Controller\Admin\PageController' => 'T4webPages\Controller\Admin\PageController',
+            ),
         );
     }
 }

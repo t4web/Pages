@@ -14,13 +14,29 @@
             "homepage": "http://about.me/maxgu"
         }
     ],
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/t4web/actioninjections.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/t4web/base.git"
+        }
+    ],
     "require": {
         "php": ">=5.4.42",
         "zendframework/zend-console": "~2.5.0",
         "zendframework/zend-db": "~2.5.0",
+        "zendframework/zend-eventmanager": "~2.5.0",
+        "zendframework/zend-form": "~2.5.0",
         "zendframework/zend-modulemanager": "~2.5.0",
         "zendframework/zend-mvc": "~2.5.0",
-        "zendframework/zend-servicemanager": "~2.5.0"
+        "zendframework/zend-servicemanager": "~2.5.0",
+        "zendframework/zend-view": "~2.5.0",
+
+        "t4web/actioninjections": "dev-master",
+        "t4web/base": "dev-master"
     },
     "require-dev" : {
         "codeception/codeception": "*"

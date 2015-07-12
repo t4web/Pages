@@ -37,7 +37,7 @@ class InitController extends AbstractActionController {
         $table->addColumn(new Column\Varchar('title', 255));
         $table->addColumn(new Column\Text('body'));
         $table->addColumn(new Column\Datetime('dt_created'));
-        $table->addColumn(new Column\Datetime('dt_updated'));
+        $table->addColumn(new Column\Datetime('dt_updated', true));
 
         $table->addConstraint(new Constraint\PrimaryKey('id'));
 

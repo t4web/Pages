@@ -7,11 +7,11 @@ use Zend\Mvc\Controller\AbstractActionController;
 class PagesController extends AbstractActionController {
 
     /**
-     * @return ViewModel
+     * @return ListViewModel
      */
-    public function listAction()
+    public function listAction($view)
     {
-        return $this->view;
+        return $view;
     }
 
 }

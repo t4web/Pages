@@ -44,9 +44,11 @@ class Module implements
         return array(
             'factories' => array(
                 'T4webPages\Page\Service\Create' => 'T4webPages\Page\Service\CreateServiceFactory',
+                'T4webPages\Page\Service\Finder' => 'T4webPages\Page\Service\FinderServiceFactory',
             ),
             'invokables' => array(
                 'T4webPages\Controller\Admin\PageViewModel' => 'T4webPages\Controller\Admin\PageViewModel',
+                'T4webPages\Controller\Admin\ListViewModel' => 'T4webPages\Controller\Admin\ListViewModel',
 
                 'T4webPages\Page\InputFilter\Create' => 'T4webPages\Page\InputFilter\Create',
             ),
@@ -61,6 +63,7 @@ class Module implements
             ),
             'invokables' => array(
                 'T4webPages\Controller\Admin\PageController' => 'T4webPages\Controller\Admin\PageController',
+                'T4webPages\Controller\Admin\PagesController' => 'T4webPages\Controller\Admin\PagesController',
             ),
         );
     }

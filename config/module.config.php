@@ -52,6 +52,14 @@ return array(
                 },
             ),
         ),
+        'T4webPages\Controller\Admin\PagesController' => array(
+            'listAction' => array(
+                'T4webPages\Controller\Admin\ListViewModel',
+                function($serviceLocator, $targetController) {
+                    return $serviceLocator->get('T4webPages\Page\Service\Finder');
+                },
+            ),
+        ),
     ),
 
     'view_manager' => array(
